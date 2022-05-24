@@ -1,29 +1,72 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-  <div class="carousel-item active">
-    <%= image_tag "slide3.jpg", class: "d-block w-100" %>
+<div class="prd prd-has-loader prd-sale prd-popular prd-has-countdown">
+<div class="prd-inside">
+    <div class="prd-img-area"><a href="product.html" class="prd-img"><img src="images/products/product-placeholder.png" data-srcset="images/products/product-h-1.jpg" alt="Tie with texture" class="js-prd-img lazyload"></a>
+        <div class="label-sale">-51%</div><a href="#" class="label-wishlist icon-heart js-label-wishlist"></a>
+        <ul class="list-options color-swatch prd-hidemobile">
+            <li data-image="images/products/product-h-1.jpg"><a href="#" class="js-color-toggle"><img src="images/products/product-placeholder.png" data-srcset="images/products/xsmall/product-h-1.jpg" class="lazyload" alt="Color Name"></a></li>
+            <li data-image="images/products/product-h-2.jpg"><a href="#" class="js-color-toggle"><img src="images/products/product-placeholder.png" data-srcset="images/products/xsmall/product-h-2.jpg" class="lazyload" alt="Color Name"></a></li>
+            <li data-image="images/products/product-h-3.jpg"><a href="#" class="js-color-toggle"><img src="images/products/product-placeholder.png" data-srcset="images/products/xsmall/product-h-3.jpg" class="lazyload" alt="Color Name"></a></li>
+        </ul>
+        <div class="countdown-box">
+            <div class="countdown js-countdown" data-countdown="2019/12/31"></div>
+        </div>
+        <div class="gdw-loader"></div>
     </div>
-    <div class="carousel-item">
-    <%= image_tag "slide3.jpg", class: "d-block w-100" %>
+    <div class="prd-info">
+        <div class="prd-tag prd-hidemobile"><a href="#">colvin klein</a></div>
+        <h2 class="prd-title"><a href="product.html">Tie with texture</a></h2>
+        <div class="prd-rating prd-hidemobile"><i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star"></i></div>
+        <div class="prd-price">
+            <div class="price-new">$ 34.00</div>
+            <div class="price-old">$ 70.00</div>
+            <div class="price-comment">You save $ 36.00</div>
+        </div>
+        <div class="prd-hover">
+            <div class="prd-action">
+                <form action="#"><input type="hidden"> <button class="btn" data-fancybox data-src="#modalCheckOut"><i class="icon icon-handbag"></i><span>Add To Cart</span></button></form>
+                <div class="prd-links"><a href="#" class="icon-eye prd-qview-link js-qview-link" data-fancybox data-src="#modalQuickView"></a></div>
+            </div>
+            <div class="prd-options prd-hidemobile"><span class="label-options">Sizes:</span>
+                <ul class="list-options size-swatch">
+                    <li class="active"><span>xs</span></li>
+                    <li><span>s</span></li>
+                    <li><span>m</span></li>
+                    <li><span>l</span></li>
+                    <li><span>xl</span></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-    <%= image_tag "slide3.jpg", class: "d-block w-100" %>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="prd-info">
   <div class="prd-tag prd-hidemobile"><a href="#"></a></div>
   <h2 class="prd-title"><a href="product.html"> <%= product.name %></a></h2>

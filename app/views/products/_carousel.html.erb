@@ -1,0 +1,65 @@
+<div class="fstart">
+<%= image_tag "products/small/product-01-6.jpg", class: "img-fluid" %>
+<%= image_tag "products/small/product-01-6.jpg", class: "img-fluid" %>
+<%= image_tag "products/small/product-01-6.jpg", class: "img-fluid" %>
+<%= image_tag "products/small/product-01-6.jpg", class: "img-fluid" %>
+
+</div>
+<div class="fixed-wrapper">
+    <div class="fixed-scroll">
+        <div class="fixed-col_content">
+            <div class="prd-block-prevnext"><a href="#" class="prd-block-prevnext-arrow js-prd-block-next"><i class="icon-angle-right"></i></a>
+                <div class="prd-next">
+                    <div class="prd-next-img"><img src="images/products/xsmall/product-02.jpg" alt=""></div>
+                    <div class="prd-next-info">
+                        <div class="prd-next-tag"><a href="#">canverse</a></div>
+                        <h2 class="prd-next-title"><a href="#">Long top with print</a></h2>
+                        <div class="prd-prevnext-price">
+                            <div class="price-new">$ 20.00</div>
+                        </div>
+                    </div>
+                </div><a href="#" class="prd-block-prevnext-arrow js-prd-block-prev"><i class="icon-angle-left"></i></a>
+                <div class="prd-prev">
+                    <div class="prd-next-img"><img src="images/products/xsmall/product-03.jpg" alt=""></div>
+                    <div class="prd-next-info">
+                        <div class="prd-next-tag"><a href="#">colvin klein</a></div>
+                        <h2 class="prd-next-title"><a href="#">Tie with texture</a></h2>
+                        <div class="prd-prevnext-price">
+                            <div class="price-new">$<%= product.price %></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="prd-block_info">
+                <div class="js-prd-d-holder prd-holder">
+                    <div class="prd-block_title-wrap">
+                        <h1 class="prd-block_title"><%= product.name %></h1>
+                    </div>
+                    <div class="prd-block_info-top">
+                        <div class="product-sku">SKU: <span>#0005</span></div>
+                        <div class="prd-rating"><a href="#" class="prd-review-link"><i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star"></i> <span>1 reviews</span></a></div>
+                        <div class="prd-availability">Availability: <span>26 items</span></div>
+                    </div>
+                    <div class="prd-block_description topline">
+                        <p>
+                        <%= product.description %>
+                        </p>
+                    </div>
+                </div>
+                <div class="prd-block_options topline">
+                    <div class="prd-block_qty"><span class="option-label">Qty:</span>
+                        <div class="qty qty-changer">
+                            <fieldset><input type="button" value="&#8210;" class="decrease"> <input type="text" class="qty-input" value="2" data-min="0" data-max="10"> <input type="button" value="+" class="increase"></fieldset>
+                        </div><span class="option-label">max <span class="qty-max">10</span> item(s)</span>
+                    </div>
+                </div>
+                <div class="prd-block_actions topline">
+                    <div class="prd-block_price"><span class="prd-block_price--actual">$<%= product.price %></span> <span class="prd-block_price--old">$210.00</span></div>
+                    <div class="btn-wrap"><button class="btn btn--add-to-cart" data-fancybox data-src="#modalCheckOut"><i class="icon icon-handbag"></i><span>Add to cart</span></button></div>
+                    <div class="prd-block_link"><a href="#" class="icon-heart-1"></a> <a href="#" class="icon-share"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

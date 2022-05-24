@@ -73,6 +73,10 @@ GEM
     bootsnap (1.11.1)
       msgpack (~> 1.2)
     builder (3.2.4)
+    cable_ready (4.5.0)
+      rails (>= 5.2)
+      thread-local (>= 1.1.0)
+    cancancan (3.3.0)
     capybara (3.37.1)
       addressable
       matrix
@@ -196,8 +200,15 @@ GEM
     sqlite3 (1.4.2)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
+    stimulus_reflex (3.4.1)
+      cable_ready (>= 4.5)
+      nokogiri
+      rack
+      rails (>= 5.2)
+      redis
     strscan (3.0.3)
     thor (1.2.1)
+    thread-local (1.1.0)
     timeout (0.2.0)
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
@@ -227,6 +238,8 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  cable_ready
+  cancancan
   capybara
   cssbundling-rails
   debug
@@ -240,6 +253,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  stimulus_reflex (~> 3.2)
   turbo-rails
   tzinfo-data
   web-console

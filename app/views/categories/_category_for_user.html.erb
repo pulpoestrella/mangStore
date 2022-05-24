@@ -1,0 +1,143 @@
+
+    <div class="page-content">
+        <div class="holder mt-0">
+            <div class="container">
+                <!-- Two columns -->
+                <!-- Page Title -->
+                <div class="page-title text-center d-none d-lg-block">
+                    <div class="title">
+                        <h1><%= category.name %>
+                        </h1>
+                    </div>
+                </div>
+                <!-- /Page Title -->
+                <div class="row">
+                    <!-- Left column -->
+                    <div class="col-lg-3 aside aside--left fixed-col js-filter-col">
+                        <div class="fixed-col_container">
+                            <div class="filter-close">CLOSE</div>
+                            <div class="sidebar-block filter-group-block open">
+                                <div class="sidebar-block_title"><span>Current Selection</span>
+                                    <div class="toggle-arrow"></div>
+                                </div>
+                                <div class="sidebar-block_content">
+                                    <div class="selected-filters-wrap">
+                                        <ul class="selected-filters">
+                                            <li><a href="#">Men</a></li>
+                                            <li><a href="#">Red</a></li>
+                                            <li><a href="#">Nike</a></li>
+                                            <li><a href="#">Above $200</a></li>
+                                            <li><a href="#">S</a></li>
+                                        </ul>
+                                        <div class="d-flex align-items-center"><a href="#" class="clear-filters"><span>Clear All</span></a>
+                                            <div class="selected-count ml-auto d-none d-lg-block">SELECTED<span><b>25 items</b></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-block filter-group-block collapsed">
+                                <div class="sidebar-block_title"><span>Categories</span>
+                                    <div class="toggle-arrow"></div>
+                                </div>
+                                <div class="sidebar-block_content">
+                                    <ul class="category-list">
+                                        <li class="active"><a href="#">Women</a></li>
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Electronics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar-block filter-group-block collapsed">
+                                <div class="sidebar-block_title"><span>Colors</span>
+                                    <div class="toggle-arrow"></div>
+                                </div>
+                                <div class="sidebar-block_content">
+                                    <ul class="color-list two-column">
+                                        <li class="active"><a href="#" data-tooltip="Very long some color name" title="Very long some color name"><span class="value"><img src="images/colorswatch/color-red.png" alt=""></span><span class="colorname">Very long some color name (125)</span></a></li>
+                                        <li><a href="#" data-tooltip="Pink" title="Pink"><span class="value"><img src="images/colorswatch/color-pink.png" alt=""></span><span class="colorname">Pink (125)</span></a></li>
+                                        <li><a href="#" data-tooltip="Violet" title="Violet"><span class="value"><img src="images/colorswatch/color-violet.png" alt=""></span><span class="colorname">Violet (125)</span></a></li>
+                                        <li><a href="#" data-tooltip="Blue" title="Blue"><span class="value"><img src="images/colorswatch/color-blue.png" alt=""></span><span class="colorname">Blue (125)</span></a></li>
+                                        <li><a href="#" data-tooltip="Marine" title="Marine"><span class="value"><img src="images/colorswatch/color-marine.png" alt=""></span><span class="colorname">Marine (125)</span></a></li>
+                                        <li><a href="#" data-tooltip="Orange" title="Orange"><span class="value"><img src="images/colorswatch/color-orange.png" alt=""></span><span class="colorname">Orange (125)</span></a></li>
+                                        <li><a href="#" data-tooltip="Yellow" title="Yellow"><span class="value"><img src="images/colorswatch/color-yellow.png" alt=""></span><span class="colorname">Yellow (125)</span></a></li>
+                                        <li><a href="#" data-tooltip="Dark Yellow" title="Dark Yellow"><span class="value"><img src="images/colorswatch/color-darkyellow.png" alt=""></span><span class="colorname">Dark Yellow (125)</span></a></li>
+                                        <li><a href="#" data-tooltip="Very long some color name" title="Very long some color name"><span class="value"><img src="images/colorswatch/color-black.png" alt=""></span><span class="colorname">Very long some color name (125)</span></a></li>
+                                        <li><a href="#" data-tooltip="White" title="White"><span class="value"><img src="images/colorswatch/color-white.png" alt=""></span><span class="colorname">White (125)</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Left column -->
+                    <!-- Center column -->
+                    <div class="col-lg aside">
+                        <div class="prd-grid-wrap">
+                            <!-- Categories Info -->
+                            <div class="category-description">
+                            <p>   
+                            <%= category.description %>
+                             </p>
+                            </div><!-- Categories Info -->
+                            <!-- Products Grid -->
+                            <div class="prd-grid product-listing data-to-show-3 data-to-show-md-3 data-to-show-sm-2 js-category-grid">
+                            <% products.each do |product| %>
+                                <div class="prd prd-has-loader prd-sale prd-new prd-has-countdown">
+                                <div class="prd-inside">
+                                    <div class="prd-img-area"><a href="product.html" class="prd-img"><img src="images/products/product-placeholder.png" data-srcset="images/products/product-05.jpg" alt="Checkered shirt" class="js-prd-img lazyload"></a>
+                                        <div class="label-sale">-62%</div>
+                                        <div class="label-new">NEW</div><a href="#" class="label-wishlist icon-heart js-label-wishlist"></a>
+                                        <ul class="list-options color-swatch prd-hidemobile">
+                                            <li data-image="images/products/product-05.jpg"><a href="#" class="js-color-toggle"><img src="images/products/product-placeholder.png" data-srcset="images/products/xsmall/product-05.jpg" class="lazyload" alt="Color Name"></a></li>
+                                            <li data-image="images/products/product-05-2.jpg"><a href="#" class="js-color-toggle"><img src="images/products/product-placeholder.png" data-srcset="images/products/xsmall/product-05-2.jpg" class="lazyload" alt="Color Name"></a></li>
+                                        </ul>
+                                        <div class="countdown-box">
+                                            <div class="countdown js-countdown" data-countdown="2019/12/31"></div>
+                                        </div>
+                                        <div class="gdw-loader"></div>
+                                    </div>
+                                    <div class="prd-info">
+                                        <div class="prd-tag prd-hidemobile"><a href="#">canverse</a></div>
+                                        <h2 class="prd-title"><a href="product.html">Checkered shirt</a></h2>
+                                        <div class="prd-rating prd-hidemobile"><i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star fill"></i><i class="icon-star"></i></div>
+                                        <div class="prd-price">
+                                            <div class="price-new">$ 75.00</div>
+                                            <div class="price-old">$ 200.00</div>
+                                            <div class="price-comment">You save $ 125.00</div>
+                                        </div>
+                                        <div class="prd-hover">
+                                            <div class="prd-action">
+                                                <form action="#"><input type="hidden"> <button class="btn" data-fancybox data-src="#modalCheckOut"><i class="icon icon-handbag"></i><span>Add To Cart</span></button></form>
+                                                <div class="prd-links"><a href="#" class="icon-eye prd-qview-link js-qview-link" data-fancybox data-src="#modalQuickView"></a></div>
+                                            </div>
+                                            <div class="prd-options prd-hidemobile"><span class="label-options">Sizes:</span>
+                                                <ul class="list-options size-swatch">
+                                                    <li class="active"><span>xs</span></li>
+                                                    <li><span>s</span></li>
+                                                    <li><span>m</span></li>
+                                                    <li><span>l</span></li>
+                                                    <li><span>xl</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                              <% end %>
+                            </div>
+                            <div class="loader-wrap">
+                                <div class="dots">
+                                    <div class="dot one"></div>
+                                    <div class="dot two"></div>
+                                    <div class="dot three"></div>
+                                </div>
+                            </div>
+                            <!-- /Products Grid -->
+                        </div>
+                    </div>
+                    <!-- /Center column -->
+                </div>
+                <!-- /Two columns -->
+            </div>
+        </div>
+    </div>
+

@@ -1,6 +1,8 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: %i[ show edit update destroy ]
-
+  before_action :set_products, only: %i[ show ]
+  load_and_authorize_resource
+  
   # GET /categories or /categories.json
   def index
     @categories = Category.all
@@ -61,6 +63,12 @@ class CategoriesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_category
       @category = Category.find(params[:id])
+    end
+
+    def set_products
+      @products = Product.where(category_id: params[:id])
+      p "kkkkks"
+      p @products
     end
 
     # Only allow a list of trusted parameters through.
